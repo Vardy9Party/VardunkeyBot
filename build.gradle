@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'application'
+}
+
+mainClassName = "Main"
+
+version '0.0.1'
+
+dependencies {
+
+    compile "com.github.Discord4J:Discord4J:2.10.0"
+}
+
+repositories {
+
+    jcenter() //This prevents issues with transitive dependencies
+    maven {
+        url  "https://jitpack.io"
+    }
+}
